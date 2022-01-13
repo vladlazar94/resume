@@ -1,5 +1,4 @@
 body {
-  position: relative;
   background-color: #fafafa;
   font: 12pt "Tahoma";
   width: 21cm;
@@ -7,31 +6,83 @@ body {
   height: 29.7cm;
   min-height: 29.7cm;
   padding: 2cm;
+  padding-top: 1cm;
   margin: 1cm auto;
   border: 1px #d3d3d3 solid;
   border-radius: 5px;
   background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  margin-bottom: 0;
+body > header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title address"
+    "intro intro";
 }
 
-header h3 {
+body > header > h1 {
+  grid-area: title;
+  align-self: end;
+}
+
+body > header > h2 {
+  grid-area: intro;
+  font-size: 1rem;
   margin-top: 0;
   margin-top: 0.5rem;
+}
+
+body > header > address {
+  grid-area: address;
+  justify-self: end;
 }
 
 address {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  padding: 1cm;
-  right: 0;
-  top: 0;
+}
+
+.elevated {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
 }
 
 address a {
+  display: flex;
   text-decoration: none;
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.8rem;
+}
+
+address a img {
+  height: 1rem;
+  margin-right: 0.3rem;
+}
+
+article {
+  margin-top: 2rem;
+  height: 3rem;
+  display: flex;
+  margin-bottom: 8rem;
+}
+
+article > header {
+  margin-left: 1rem;
+}
+
+article > header > h2 {
+  margin: 0;
+}
+
+article > header > h3 {
+  cursor: pointer;
+  margin: 0.3rem 0 0 0;
 }

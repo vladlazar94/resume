@@ -1,12 +1,36 @@
-.react-blue {
-  color: #61dafb;
+.react-font {
+  color: #57c7e6;
+}
+
+.react-bg {
+  background-color: #282c34;
+}
+
+.typescript-font {
+  color: #fff;
+}
+
+.typescript-bg {
+  background-color: #3178c6;
+}
+
+.webpack-font {
+  color: #fff;
+}
+
+.webpack-bg {
+  background-color: #2b3a42;
 }
 
 .primary-color {
-  color: cornflowerblue;
+  color: black;
 }
 
-header h3 {
+body > header > h2 {
+  color: grey;
+}
+
+article > header > h3 {
   color: grey;
 }
 

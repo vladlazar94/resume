@@ -7,31 +7,119 @@
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/colors.css" rel="stylesheet" />
     <link href="styles/animations.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300&display=swap"
-      rel="stylesheet"
-    />
     <title>Vlad Lazar (Resume)</title>
   </head>
-  <body>
+  <body class="elevated">
     <header>
       <h1 class="primary-color">Vlad Lazar</h1>
-      <h3>
-        Senior full-stack engineer, designer and tech-lead. <br />Combining the
+      <h2>
+        Senior full-stack engineer, designer and technical lead. <br />Combining the
         frontier of web technologies with accessible design to create better
         user experiences.
-      </h3>
+      </h2>
       <address>
-        <a href="mailto:vladlazar94@outlook.com">vladlazar94@outlook.com</a>
-        <a href="tel:+491735352475">+49 173 535 2475</a>
+        <a href="mailto:vladlazar94@outlook.com"><img src="icons/email.svg" alt="email"/>vladlazar94@outlook.com</a>
+        <a href="https://www.linkedin.com/in/vladlazar94"><img src="icons/linkeding.svg" alt="linkedin"/>linkedin.com/in/vladlazar94</a>
+        <a href="https://vladlazar94.medium.com"><img src="icons/medium.svg" alt="phone"/>vladlazar94.medium.com</a>
+        <a href="https://www.instagram.com/vladlazar94"><img src="icons/instagram.svg" alt="instagram"/>instagram.com/vladlazar94</a>
+        <a href="https://twitter.com/vladlazar94"><img src="icons/twitter.svg" alt="twitter"/>twitter.com/vladlazar94</a>
+        
       </address>
     </header>
 
-    <span class="react-blue">
-      <img src="images/react-logo.svg" alt="foo bar baz" class="rotating" />
-      React
-    </span>
+    <section class="row">
+      <span class="skill react-bg">
+        <img src="images/react-logo.svg" alt="foo bar baz" class="rotating" />
+        <span class="react-font">React</span>
+      </span>
+
+      <span class="skill typescript-bg">
+        <img src="images/typescript-logo.svg" alt="foo bar baz" />
+        <span class="typescript-font">TypeScript</span>
+      </span>
+
+      <span class="skill webpack-bg">
+        <img src="images/webpack-logo.svg" alt="foo bar baz" />
+        <span class="webpack-font">webpack</span>
+      </span>
+    </section>
+
+    <article>
+      <img src="images/intelligence.svg" alt="foo bar baz" />
+      <header>
+        <h2>Lead Frontend Engineer</h2>
+        <h3>Cobrainer GmbH</h2>
+      </header>
+    </article>
+
+    <article>
+      <img src="images/doctor-patient.svg" alt="foo bar baz" />
+      <header>
+        <h2>Senior Software Engineer</h2>
+        <h3>Smart Reporting GmbH, Medical Reporting Experience</h3>
+      </header>
+    </article>
+
+    <article>
+      <img src="images/robotics.svg" alt="foo bar baz" />
+      <header>
+        <h2>Software Engineer</h2>
+        <h3>E3D-Online Ltd, Pathio 3D-Printing Slicer</h3>
+      </header>
+      <span>
+        <time datetime="2018-07-07">Jan 2018</time>
+        to
+        <time datetime="2018-07-07">Feb 2019</time>
+        <br>
+        <time datetime="2018-07-07">1 year, 2 months</time>
+      </span>
+    </article>
+
+    <article>
+      <img src="images/university.svg" alt="foo bar baz" />
+      <header>
+        <h2>Bachelor's Degree in Mathematics</h2>
+        <h3>Babes-Bolyai University of Cluj-Napoca</h3>
+      </header>
+    </article>
   </body>
+
+  <style>
+    article > span {
+      margin-left: auto;
+    }
+
+
+
+    .skill {
+      display: flex;
+      align-items: flex-end;
+      margin-left: 1rem;
+      padding: 0.3rem;
+      padding-right: 1rem;
+      border-radius: 3px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .skill .react-font {
+      margin-left: 0;
+    }
+
+    .skill:first-child {
+      margin-left: 0;
+    }
+
+    .skill img {
+      height: 1.5rem;
+    }
+
+    .skill span {
+      font-size: 1.2rem;
+      margin-left: 0.5rem;
+    }
+
+    .row {
+      display: flex;
+    }
+  </style>
 </html>
