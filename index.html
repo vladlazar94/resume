@@ -19,28 +19,63 @@
       </h2>
       <address>
         <a href="mailto:vladlazar94@outlook.com"><img src="icons/email.svg" alt="email"/>vladlazar94@outlook.com</a>
-        <a href="https://www.linkedin.com/in/vladlazar94"><img src="icons/linkeding.svg" alt="linkedin"/>linkedin.com/in/vladlazar94</a>
-        <a href="https://vladlazar94.medium.com"><img src="icons/medium.svg" alt="phone"/>vladlazar94.medium.com</a>
-        <a href="https://www.instagram.com/vladlazar94"><img src="icons/instagram.svg" alt="instagram"/>instagram.com/vladlazar94</a>
-        <a href="https://twitter.com/vladlazar94"><img src="icons/twitter.svg" alt="twitter"/>twitter.com/vladlazar94</a>
-        
+        <a href="https://www.linkedin.com/in/vladlazar94"><img src="logos/linkeding.svg" alt="linkedin"/>linkedin.com/in/vladlazar94</a>
+        <a href="https://github.com/vladlazar94"><img src="logos/github.svg" alt="github"/>github.com/vladlazar94</a>
+        <a href="https://vladlazar94.medium.com"><img src="logos/medium.svg" alt="phone"/>vladlazar94.medium.com</a>
+        <a href="https://twitter.com/vladlazar94"><img src="logos/twitter.svg" alt="twitter"/>twitter.com/vladlazar94</a>
+        <a href="https://www.instagram.com/vladlazar94"><img src="logos/instagram.svg" alt="instagram"/>instagram.com/vladlazar94</a>
       </address>
     </header>
 
     <section class="row">
-      <span class="skill react-bg">
-        <img src="images/react-logo.svg" alt="foo bar baz" class="rotating" />
-        <span class="react-font">React</span>
+      <span class="skill">
+        <img src="logos/react.svg" alt="foo bar baz" class="rotating" />
+        <span>React</span>
       </span>
 
-      <span class="skill typescript-bg">
-        <img src="images/typescript-logo.svg" alt="foo bar baz" />
-        <span class="typescript-font">TypeScript</span>
+      <span class="skill">
+        <img src="logos/react-query.svg" alt="foo bar baz" class="rotating" />
+        <span>React Query</span>
       </span>
 
-      <span class="skill webpack-bg">
-        <img src="images/webpack-logo.svg" alt="foo bar baz" />
-        <span class="webpack-font">webpack</span>
+      <span class="skill">
+        <img src="logos/react-router.svg" alt="foo bar baz" />
+        <span>React Router</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/react-spring.svg" alt="foo bar baz" />
+        <span>React Spring</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/redux.svg" alt="foo bar baz" />
+        <span>Redux</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/typescript.svg" alt="foo bar baz" />
+        <span>TypeScript</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/javascript.svg" alt="foo bar baz" />
+        <span>JavaScript</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/webpack.svg" alt="foo bar baz" />
+        <span>webpack</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/node.svg" alt="foo bar baz" />
+        <span>Node.js</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/graphql.svg" alt="foo bar baz" />
+        <span>GraphQL</span>
       </span>
     </section>
 
@@ -85,16 +120,22 @@
   </body>
 
   <style>
+    body > section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     article > span {
+      display: none;
       margin-left: auto;
     }
 
-
-
     .skill {
+      width: min-content;
       display: flex;
       align-items: flex-end;
       margin-left: 1rem;
+      margin: 5px;
       padding: 0.3rem;
       padding-right: 1rem;
       border-radius: 3px;
@@ -116,10 +157,9 @@
     .skill span {
       font-size: 1.2rem;
       margin-left: 0.5rem;
+      white-space: nowrap;
     }
 
-    .row {
-      display: flex;
-    }
+
   </style>
 </html>
