@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica";
+  font-weight: 500;
+}
+
 body {
-  background-color: #fafafa;
-  font: 12pt "Tahoma";
   width: 21cm;
   min-width: 21cm;
   height: 29.7cm;
@@ -8,9 +12,7 @@ body {
   padding: 2cm;
   padding-top: 1cm;
   margin: 1cm auto;
-  border: 1px #d3d3d3 solid;
   border-radius: 5px;
-  background: white;
 }
 
 body > header {
@@ -45,10 +47,6 @@ address {
   flex-direction: column;
 }
 
-.elevated {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
 h1 {
   margin: 0;
   font-size: 3rem;
@@ -56,7 +54,6 @@ h1 {
 
 address a {
   display: flex;
-  text-decoration: none;
   font-style: normal;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.8rem;

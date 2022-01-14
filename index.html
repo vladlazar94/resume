@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/vars.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/colors.css" rel="stylesheet" />
-    <link href="styles/animations.css" rel="stylesheet" />
+    <link href="styles/effects.css" rel="stylesheet" />
+    <link href="styles/shadows.css" rel="stylesheet" />
     <title>Vlad Lazar (Resume)</title>
   </head>
-  <body class="elevated">
+  <body>
     <header>
-      <h1 class="primary-color">Vlad Lazar</h1>
+      <h1>Vlad Lazar</h1>
       <h2>
         Senior full-stack engineer, designer and technical lead. <br />Combining the
         frontier of web technologies with accessible design to create better
@@ -29,12 +31,12 @@
 
     <section class="row">
       <span class="skill">
-        <img src="logos/react.svg" alt="foo bar baz" class="rotating" />
+        <img src="logos/react.svg" alt="foo bar baz" />
         <span>React</span>
       </span>
 
       <span class="skill">
-        <img src="logos/react-query.svg" alt="foo bar baz" class="rotating" />
+        <img src="logos/react-query.svg" alt="foo bar baz" />
         <span>React Query</span>
       </span>
 
@@ -65,7 +67,7 @@
 
       <span class="skill">
         <img src="logos/webpack.svg" alt="foo bar baz" />
-        <span>webpack</span>
+        <span>Webpack</span>
       </span>
 
       <span class="skill">
@@ -76,6 +78,26 @@
       <span class="skill">
         <img src="logos/graphql.svg" alt="foo bar baz" />
         <span>GraphQL</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/material.svg" alt="foo bar baz" />
+        <span>Material Design</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/carbon.svg" alt="foo bar baz" />
+        <span>Carbon Design</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/figma.svg" alt="foo bar baz" />
+        <span>Figma</span>
+      </span>
+
+      <span class="skill">
+        <img src="logos/svg.svg" alt="foo bar baz" />
+        <span>SVG</span>
       </span>
     </section>
 
@@ -123,6 +145,7 @@
     body > section {
       display: flex;
       flex-wrap: wrap;
+      margin-left: -5px;
     }
 
     article > span {
@@ -139,23 +162,16 @@
       padding: 0.3rem;
       padding-right: 1rem;
       border-radius: 3px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .skill .react-font {
-      margin-left: 0;
-    }
-
-    .skill:first-child {
-      margin-left: 0;
+      box-shadow: 0 0 5px var(--ui-03);
     }
 
     .skill img {
-      height: 1.5rem;
+      height: 1.2rem;
     }
 
     .skill span {
-      font-size: 1.2rem;
+      font-family: Helvetica;
+      font-size: 1rem;
       margin-left: 0.5rem;
       white-space: nowrap;
     }
