@@ -26,6 +26,10 @@ article > header > h3 {
   color: var(--text-03);
 }
 
+article > header > h3 > a {
+  color: var(--link-01);
+}
+
 address a {
   color: var(--link-01);
 }

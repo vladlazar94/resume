@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Helvetica";
-  font-weight: 500;
 }
 
 body {
@@ -13,6 +11,11 @@ body {
   padding-top: 1cm;
   margin: 1cm auto;
   border-radius: 5px;
+}
+
+body,
+body > section > span {
+  border: 1px var(--ui-03) solid;
 }
 
 body > header {
@@ -32,9 +35,6 @@ body > header > h1 {
 
 body > header > h2 {
   grid-area: intro;
-  font-size: 1rem;
-  margin-top: 0;
-  margin-top: 0.5rem;
 }
 
 body > header > address {
@@ -54,9 +54,7 @@ h1 {
 
 address a {
   display: flex;
-  font-style: normal;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.8rem;
+  align-items: flex-end;
 }
 
 address a img {
@@ -66,20 +64,15 @@ address a img {
 
 article {
   margin-top: 2rem;
-  height: 3rem;
+  height: 3.2rem;
   display: flex;
   margin-bottom: 8rem;
 }
 
 article > header {
-  margin-left: 1rem;
+  margin-left: 1em;
 }
 
 article > header > h2 {
   margin: 0;
-}
-
-article > header > h3 {
-  cursor: pointer;
-  margin: 0.3rem 0 0 0;
 }

@@ -1,5 +1,0 @@
-body,
-body > section > span {
-  border: 1px var(--ui-03) solid;
-  box-shadow: 0 0 5px var(--ui-03);
-}
