@@ -1,40 +1,32 @@
-body {
-  background-color: var(--ui-background);
+a {
+  color: var(--font-color-link);
 }
 
-body > header > h1 {
-  color: var(--text-01);
+header > h1 {
+  color: var(--font-color-primary);
 }
 
 body > header > h2 {
-  color: var(--text-01);
+  color: var(--font-color-primary);
 }
 
-section > span {
-  background-color: var(--ui-background);
-}
-
-section > span > a,
-section > span > span {
-  color: var(--text-01);
+main > span > a {
+  color: var(--font-color-primary);
+  letter-spacing: var(--letter-spacing-l);
 }
 
 article > header > h2 {
-  color: var(--text-01);
+  color: var(--font-color-primary);
 }
 
 article > header > h3 {
-  color: var(--text-03);
+  color: var(--font-color-link);
 }
 
-article > header > h3 > a {
-  color: var(--link-01);
-}
-
-address a {
-  color: var(--link-01);
+article > p {
+  color: var(--font-color-secondary);
 }
 
 article > aside {
-  color: var(--text-03);
+  color: var(--font-color-tertiary);
 }

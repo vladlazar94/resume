@@ -1,5 +1,4 @@
 * {
-  font-family: "Helvetica";
   margin: 0;
 }
 
@@ -7,106 +6,58 @@ a:not(:hover) {
   text-decoration: none;
 }
 
+h1 {
+  font-family: Tahoma;
+  font-weight: 300;
+  margin-bottom: var(--font-size-m);
+}
+
+body > header > h2 {
+  font-family: Helvetica;
+  font-size: var(--font-size-m);
+  line-height: 1.375rem;
+  letter-spacing: var(--letter-spacing-l);
+  font-weight: 500;
+}
+
 address > a {
+  font-family: Verdana;
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-l);
   font-style: normal;
 }
 
-p {
-  color: var(--text-02);
+article > header > h2 {
+  font-family: Helvetica;
+  font-size: var(--font-size-l);
+  font-weight: 500;
 }
 
-.expressive-heading-01 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.25em;
-  letter-spacing: 0px;
+article > header > h3 {
+  font-family: Tahoma;
+  letter-spacing: var(--letter-spacing-l);
+  font-size: var(--font-size-m);
+  line-height: calc(2 * var(--font-size-m));
 }
 
-.expressive-heading-02 {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5em;
-  letter-spacing: 0px;
+article > p {
+  font-family: Helvetica;
+  font-size: var(--font-size-m);
+  line-height: 1.25rem;
+  letter-spacing: var(--letter-spacing-l);
 }
 
-.expressive-heading-03 {
-  font-size: 1.25rem;
+article > header > h3 > a {
   font-weight: 400;
-  line-height: 1.75em;
-  letter-spacing: 0px;
 }
 
-.expressive-heading-04 {
-  font-size: 1.75rem;
-  font-weight: 400;
-  /* line-height: 2.25em; */
-  letter-spacing: 0px;
+article > aside {
+  font-family: Verdana;
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-l);
 }
 
-.expressive-heading-05 {
-  font-size: 2.625rem;
-  font-weight: 300;
-  line-height: 2em;
-  letter-spacing: 0px;
-}
-
-.expressive-heading-06 {
-  font-size: 2.625rem;
-  font-weight: 600;
-  line-height: 3.125em;
-  letter-spacing: 0px;
-}
-
-.helper-text-01 {
-  font-size: 0.75rem;
-  font-weight: 400;
-  line-height: 1em;
-  letter-spacing: 0.32px;
-}
-
-.helper-text-02 {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.125em;
-  letter-spacing: 0.16px;
-}
-
-.label-01 {
-  font-size: 0.75rem;
-  font-weight: 400;
-  letter-spacing: 0.32px;
-}
-
-.label-02 {
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 0.16px;
-}
-
-.body-short-01 {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.125em;
-  letter-spacing: 0.16px;
-}
-
-.body-short-02 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.375em;
-  letter-spacing: 0px;
-}
-
-.body-long-01 {
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.25em;
-  letter-spacing: 0.16px;
-}
-
-.body-long-02 {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5em;
-  letter-spacing: 0px;
+main > span > a {
+  font-family: Tahoma;
+  font-size: var(--font-size-s);
 }

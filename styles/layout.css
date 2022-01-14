@@ -1,3 +1,9 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -5px;
+}
+
 article {
   display: grid;
   margin-top: 1em;
@@ -19,7 +25,7 @@ article > header {
 
 article > p {
   grid-area: text;
-  margin-top: 1em;
+  margin-top: var(--font-size-xs);
   margin-left: 1.7rem;
   padding-left: calc(1.7rem + 1em - 2px);
   border-left: 2px solid black;

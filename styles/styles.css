@@ -10,12 +10,13 @@ body {
   padding: 2cm;
   padding-top: 1cm;
   margin: 1cm auto;
-  border-radius: 5px;
+  border-radius: var(--border-radius-area-xl);
+  border: 1px var(--border-color-soft) solid;
 }
 
-body,
-body > section > span {
-  border: 1px var(--ui-03) solid;
+main > span {
+  border-radius: var(--border-radius-area-m);
+  border: 2px var(--border-color-poignant) solid;
 }
 
 body > header {
