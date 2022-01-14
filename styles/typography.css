@@ -11,6 +11,10 @@ address > a {
   font-style: normal;
 }
 
+p {
+  color: var(--text-02);
+}
+
 .expressive-heading-01 {
   font-size: 0.875rem;
   font-weight: 600;

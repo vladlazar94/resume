@@ -1,0 +1,26 @@
+article {
+  display: grid;
+  margin-top: 1em;
+  grid-template-columns: 3.2rem 1fr;
+  grid-template-rows: 3.2rem 1fr;
+  grid-template-areas:
+    "pictogram  header"
+    "text       text";
+}
+
+article > img {
+  grid-area: pictogram;
+}
+
+article > header {
+  grid-area: header;
+  margin-left: 1em;
+}
+
+article > p {
+  grid-area: text;
+  margin-top: 1em;
+  margin-left: 1.7rem;
+  padding-left: calc(1.7rem + 1em - 2px);
+  border-left: 2px solid black;
+}

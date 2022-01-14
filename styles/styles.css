@@ -61,18 +61,3 @@ address a img {
   height: 1rem;
   margin-right: 0.3rem;
 }
-
-article {
-  margin-top: 2rem;
-  height: 3.2rem;
-  display: flex;
-  margin-bottom: 8rem;
-}
-
-article > header {
-  margin-left: 1em;
-}
-
-article > header > h2 {
-  margin: 0;
-}
