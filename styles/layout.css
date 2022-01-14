@@ -1,11 +1,11 @@
 article {
   display: grid;
   margin-top: 1em;
-  grid-template-columns: 3.2rem 1fr;
+  grid-template-columns: 3.2rem 1fr 15rem;
   grid-template-rows: 3.2rem 1fr;
   grid-template-areas:
-    "pictogram  header"
-    "text       text";
+    "pictogram  header date"
+    "text       text   text";
 }
 
 article > img {
@@ -23,4 +23,11 @@ article > p {
   margin-left: 1.7rem;
   padding-left: calc(1.7rem + 1em - 2px);
   border-left: 2px solid black;
+}
+
+article > aside {
+  grid-area: date;
+  text-align: end;
+  justify-self: end;
+  align-self: center;
 }

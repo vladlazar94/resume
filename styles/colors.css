@@ -34,3 +34,7 @@ article > header > h3 > a {
 address a {
   color: var(--link-01);
 }
+
+article > aside {
+  color: var(--text-03);
+}
