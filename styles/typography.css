@@ -1,63 +1,48 @@
-* {
-  margin: 0;
-}
-
 a:not(:hover) {
   text-decoration: none;
 }
 
-h1 {
+body > header > h1 {
   font-family: Helvetica;
-  line-height: 48px;
-  font-size: 45px;
+  line-height: 6rem;
+  font-size: calc(6rem * 45 / 48);
   font-weight: 300;
 }
 
-body > header > h2 {
+body > article > header > h2 {
   font-family: Helvetica;
-  font-size: 13px;
-  line-height: 24px;
-}
-
-body > header > address > a {
-  font-family: Verdana;
-  line-height: 24px;
-  font-size: 12px;
-  font-weight: 300;
-  font-style: normal;
-}
-
-article > header > h2 {
-  font-family: Helvetica;
-  font-size: 25px;
-  line-height: 32px;
+  line-height: 4rem;
+  font-size: calc(4rem * 25 / 32);
   font-weight: 300;
   white-space: nowrap;
 }
 
-article > header > h3 {
+body > header > h2,
+article > p,
+article > aside {
+  font-family: Helvetica;
+  line-height: 3rem;
+  font-size: calc(3rem * 13 / 24);
+}
+
+article > header > h3,
+body > main > span > a,
+body > header > address > a {
   font-family: Verdana;
-  font-size: 12px;
-  line-height: 24px;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+article > header > h3,
+body > main > span > a {
   font-weight: 500;
 }
 
-article > p {
-  font-family: Helvetica;
-  line-height: 24px;
-  font-size: 13px;
+body > header > address > a {
+  font-weight: 300;
+  font-style: normal;
 }
 
 article > aside {
-  font-family: Helvetica;
-  line-height: 24px;
-  font-size: 13px;
   font-weight: 300;
-  letter-spacing: var(--letter-spacing-l);
-}
-
-body > main > span > a {
-  font-family: Verdana;
-  line-height: 24px;
-  font-size: 12px;
 }

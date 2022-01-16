@@ -6,7 +6,7 @@
 
 body,
 body > main > span {
-  border: 2px var(--color-secondary) solid;
+  border: 0.25rem var(--color-secondary) solid;
 }
 
 body > header > h1,
