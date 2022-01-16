@@ -57,7 +57,8 @@ article > aside {
   letter-spacing: var(--letter-spacing-l);
 }
 
-main > span > a {
-  font-family: Tahoma;
-  font-size: var(--font-size-s);
+body > main > span > a {
+  font-family: Helvetica;
+  line-height: 24px;
+  font-size: 13px;
 }

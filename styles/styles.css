@@ -1,8 +1,0 @@
-* {
-  box-sizing: border-box;
-}
-
-main > span {
-  border-radius: var(--border-radius-area-m);
-  border: 2px var(--border-color-poignant) solid;
-}
