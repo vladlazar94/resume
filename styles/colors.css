@@ -26,7 +26,3 @@ article > header > h3 {
 article > p {
   color: var(--font-color-secondary);
 }
-
-article > aside {
-  color: var(--font-color-tertiary);
-}

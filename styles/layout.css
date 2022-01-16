@@ -1,14 +1,66 @@
-main {
+body {
+  --page-height: 1040px;
+  --page-height-over-width: 1.414;
+
+  width: calc(var(--page-height) / var(--page-height-over-width));
+  height: var(--page-height);
+  margin: 8px auto;
+  border: 1px var(--border-color-soft) solid;
+}
+
+body > header {
+  margin: 32px 32px 0 32px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title address"
+    "intro intro";
+}
+
+body > header > h1 {
+  grid-area: title;
+  align-self: center;
+}
+
+body > header > h2 {
+  grid-area: intro;
+  margin-top: 8px;
+}
+
+body > header > address {
+  grid-area: address;
+  justify-self: end;
   display: flex;
+  flex-wrap: wrap;
+}
+
+body > header > address a {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+body > header > address a img {
+  height: 16px;
+  margin-right: 8px;
+}
+
+main {
+  display: none;
   flex-wrap: wrap;
   margin-left: -5px;
 }
 
 article {
+  --horizontal-margin: 32px;
+  --pictogram-width: 56px;
+  --header-margin-left: 16px;
+
   display: grid;
-  margin-top: 1em;
-  grid-template-columns: 3.2rem 1fr 15rem;
-  grid-template-rows: 3.2rem 1fr;
+  margin: 8px var(--horizontal-margin) 0 var(--horizontal-margin);
+  grid-template-columns: var(--pictogram-width) 280px 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     "pictogram  header date"
     "text       text   text";
@@ -20,15 +72,22 @@ article > img {
 
 article > header {
   grid-area: header;
-  margin-left: 1em;
+  margin-left: var(--header-margin-left);
 }
 
 article > p {
+  --left-border-thickness: 2px;
+
   grid-area: text;
-  margin-top: var(--font-size-xs);
-  margin-left: 1.7rem;
-  padding-left: calc(1.7rem + 1em - 2px);
-  border-left: 2px solid black;
+  margin-top: 8px;
+  border-left: var(--left-border-thickness) solid black;
+  margin-left: calc(
+    var(--pictogram-width) / 2 - var(--left-border-thickness) / 2
+  );
+  padding-left: calc(
+    var(--pictogram-width) / 2 + var(--header-margin-left) -
+      var(--left-border-thickness) / 2
+  );
 }
 
 article > aside {
