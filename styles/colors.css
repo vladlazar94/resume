@@ -1,28 +1,32 @@
-a {
-  color: var(--font-color-link);
+:root {
+  --color-primary: #171717;
+  --color-secondary: #565656;
+  --color-link: #0062ff;
 }
 
-header > h1 {
-  color: var(--font-color-primary);
+body,
+body > main > span {
+  border: 2px var(--color-secondary) solid;
 }
 
+body > header > h1,
+body > article > header > h2,
 body > header > h2 {
-  color: var(--font-color-primary);
+  color: var(--color-primary);
 }
 
-main > span > a {
-  color: var(--font-color-primary);
-  letter-spacing: var(--letter-spacing-l);
+body > article > aside {
+  color: var(--color-secondary);
 }
 
-article > header > h2 {
-  color: var(--font-color-primary);
+a {
+  color: var(--color-link);
 }
 
-article > header > h3 {
-  color: var(--font-color-link);
+body > main > span > a {
+  color: var(--color-primary);
 }
 
-article > p {
-  color: var(--font-color-secondary);
+body > article > p {
+  color: var(--color-primary);
 }
