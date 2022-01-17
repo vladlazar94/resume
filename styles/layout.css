@@ -118,7 +118,7 @@ body > article > p {
 
   grid-area: text;
   margin-top: 1rem;
-  border-left: var(--left-border-thickness) solid black;
+  border-left: var(--left-border-thickness) solid var(--color-primary);
   padding-bottom: 1rem;
   padding-left: calc(
     var(--pictogram-width) / 2 + var(--header-margin-left) -

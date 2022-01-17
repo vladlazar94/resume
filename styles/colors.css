@@ -1,7 +1,31 @@
 :root {
+  --color-background: #fff;
   --color-primary: #171717;
   --color-secondary: #565656;
   --color-link: #0062ff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #262626;
+    --color-primary: #f4f4f4;
+    --color-secondary: #c6c6c6;
+    --color-link: #78a9ff;
+  }
+
+  body > main > span {
+    background-color: #393939;
+  }
+
+  .invert,
+  body > header > address > a > img,
+  body > article > img {
+    filter: invert(100);
+  }
+}
+
+body {
+  background-color: var(--color-background);
 }
 
 body,
