@@ -33,6 +33,11 @@ body > article > p {
   letter-spacing: 0.04rem;
 }
 
+body > article > p em {
+  font-weight: 700;
+  font-style: normal;
+}
+
 body > article > header > h3,
 body > main > span > a,
 body > header > address > a {
