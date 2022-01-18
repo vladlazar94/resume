@@ -9,6 +9,10 @@ body > header > h1 {
   font-weight: 300;
 }
 
+body > header > h2 {
+  letter-spacing: 0.01rem;
+}
+
 body > article > header > h2 {
   font-family: Helvetica;
   line-height: 4rem;
@@ -18,14 +22,18 @@ body > article > header > h2 {
 }
 
 body > header > h2,
-article > p,
-article > aside {
+body > article > p,
+body > article > aside {
   font-family: Helvetica;
   line-height: 3rem;
   font-size: calc(3rem * 13 / 24);
 }
 
-article > header > h3,
+body > article > p {
+  letter-spacing: 0.04rem;
+}
+
+body > article > header > h3,
 body > main > span > a,
 body > header > address > a {
   font-family: Verdana;
@@ -33,7 +41,7 @@ body > header > address > a {
   font-size: 1.5rem;
 }
 
-article > header > h3,
+body > article > header > h3,
 body > main > span > a {
   font-weight: 500;
 }
@@ -43,6 +51,7 @@ body > header > address > a {
   font-style: normal;
 }
 
-article > aside {
+body > article > aside {
   font-weight: 300;
+  letter-spacing: 0.08rem;
 }

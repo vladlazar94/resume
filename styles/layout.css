@@ -62,7 +62,7 @@ body > header > address a img {
 body > main {
   display: flex;
   flex-wrap: wrap;
-  margin: 3rem 4rem 0 4rem;
+  margin: 1rem 4rem 0 4rem;
 }
 
 body > main > span {
@@ -117,7 +117,6 @@ body > article > p {
   --left-border-thickness: 0.25rem;
 
   grid-area: text;
-  margin-top: 1rem;
   border-left: var(--left-border-thickness) solid var(--color-primary);
   padding-bottom: 1rem;
   padding-left: calc(
@@ -127,6 +126,10 @@ body > article > p {
   margin-left: calc(
     var(--pictogram-width) / 2 - var(--left-border-thickness) / 2
   );
+}
+
+body > article:last-of-type > p {
+  margin-top: 2rem;
 }
 
 body > article > aside {
