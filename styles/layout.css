@@ -4,7 +4,7 @@
 }
 
 :root {
-  font-size: 0.75vh;
+  font-size: 0.74vh;
 }
 
 body {
@@ -13,7 +13,8 @@ body {
 
   width: calc(var(--page-height) / var(--page-height-over-width));
   height: var(--page-height);
-  margin: 1.2vh auto;
+  margin: 1.6vh auto;
+  box-shadow: 0px 0px 4px 1px rgb(0 0 0 / 15%);
 }
 
 body,
@@ -106,6 +107,8 @@ body > article {
 
 body > article > img {
   grid-area: pictogram;
+  width: 7rem;
+  height: 7rem;
 }
 
 body > article > header {
@@ -137,4 +140,17 @@ body > article > aside {
   text-align: end;
   justify-self: end;
   align-self: center;
+}
+
+@media print {
+  :root {
+    font-size: 0.77vh !important;
+  }
+
+  body {
+    border: none !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    box-shadow: none !important;
+  }
 }

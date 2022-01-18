@@ -28,9 +28,12 @@ body {
   background-color: var(--color-background);
 }
 
-body,
 body > main > span {
   border: 0.25rem var(--color-secondary) solid;
+}
+
+body {
+  border: 0.25rem transparent solid;
 }
 
 body > header > h1,
