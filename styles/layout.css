@@ -4,7 +4,7 @@
 }
 
 :root {
-  font-size: 6px;
+  font-size: 0.75vh;
 }
 
 body {
@@ -13,7 +13,7 @@ body {
 
   width: calc(var(--page-height) / var(--page-height-over-width));
   height: var(--page-height);
-  margin: 1rem auto;
+  margin: 1.2vh auto;
 }
 
 body,
